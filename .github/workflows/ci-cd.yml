@@ -10,7 +10,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -29,6 +28,9 @@ jobs:
       - name: Run tests
         run: mvn test
 
+      - name: OWASP Dependency Check
+        run: mvn org.owasp:dependency-check-maven:check
+
       - name: Build project
         run: mvn package
 
@@ -37,4 +39,3 @@ jobs:
         with:
           name: trade-store-artifacts
           path: target/*.jar
-

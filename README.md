@@ -1,4 +1,4 @@
-# Trade Management System
+# Trade Store Management System
 
 ## Getting Started
 

@@ -1,4 +1,4 @@
-# Trade Store Management System
+# Trade Pipeline
 
 ## Getting Started
 
@@ -11,7 +11,7 @@
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/trade-management-system.git
+   git clone https://github.com/aloktripathy2698/Trade-Pipeline.git
    cd trade-management-system
    ```
 

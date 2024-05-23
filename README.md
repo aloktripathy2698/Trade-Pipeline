@@ -1,5 +1,9 @@
 # Trade Pipeline
 
+## Introduction
+
+Welcome to the Trade pipeline project! This repository hosts a solution for efficiently managing incoming trades. Trades are stored in a structured format based on their unique identifiers, enabling organized retrieval and analysis. This documentation provides an overview of the project's usage instructions.
+
 ## Getting Started
 
 ### Prerequisites
@@ -19,10 +23,21 @@
    ```bash
    mvn clean install
    ```
+Note - This step may take 20+ mins to download all the dependencies because as it downloads and processes the data from the National Vulnerability Database (NVD) hosted by NIST: https://nvd.nist.gov. After the first batch download, as long as the plug-in is executed at least once every seven days the update will only take a few seconds.
 
 3. **Run the application:**
    ```bash
    mvn spring-boot:run
+   ```
+Alternatively we can follow below steps:
+
+1 **Build the Jar file**
+   ```bash
+   mvn clean package
+   ```
+2 **Run the application**
+   ```bash
+   java -jar target/trade-0.0.1-SNAPSHOT.jar
    ```
 
 The application will start and run on `http://localhost:8080`.

@@ -23,7 +23,7 @@ Welcome to the Trade pipeline project! This repository hosts a solution for effi
    ```bash
    mvn clean install
    ```
-Note - This step may take 20+ mins to download all the dependencies because as it downloads and processes the data from the National Vulnerability Database (NVD) hosted by NIST: https://nvd.nist.gov. After the first batch download, as long as the plug-in is executed at least once every seven days the update will only take a few seconds.
+**Note** - This step may take 20+ mins to download all the dependencies because as it downloads and processes the data from the National Vulnerability Database (NVD) hosted by NIST: https://nvd.nist.gov. After the first batch download, as long as the plug-in is executed at least once every seven days the update will only take a few seconds.
 
 3. **Run the application:**
    ```bash
